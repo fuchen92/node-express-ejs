@@ -1,0 +1,28 @@
+{
+  "name": "node-express-ejs",
+  "version": "1.0.0",
+  "description": "“�\"\"\u001b[D使“”\u001b[D\u001b[3\u001b[3~\u001b[3~\u001b[C\u001b[ ��\"\"\u001b[D基于node平台使用express，ejs\"\u001b[D快速搭建一个简单的网站��\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuchen92/node-express-ejs.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ejs"
+  ],
+  "author": "浮尘",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuchen92/node-express-ejs/issues"
+  },
+  "homepage": "https://github.com/fuchen92/node-express-ejs#readme",
+  "devDependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0"
+  }
+}
