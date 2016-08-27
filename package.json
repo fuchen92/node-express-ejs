@@ -23,6 +23,7 @@
   "homepage": "https://github.com/fuchen92/node-express-ejs#readme",
   "devDependencies": {
     "ejs": "^2.5.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "less-middleware": "^2.2.0"
   }
 }
