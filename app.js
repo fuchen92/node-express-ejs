@@ -3,7 +3,8 @@ var express = require("express");
 
 // 引进路由模块
 var route = require("./routes/route");
-var lessMiddleWare = require("less-middleware");
+// less编译中间件
+// var lessMiddleWare = require("less-middleware");
 
 var app = express();
 
@@ -14,10 +15,11 @@ app.set("view engine", "ejs");
 // 使用路由
 app.use(route);
 
-app.use(lessMiddleWare({
-    src: __dirname + "/public",
-    compress: true
-}));
+// 使用静态资源
+// app.use(lessMiddleWare({
+//     src: __dirname + "/public",
+//     compress: true
+// }));
 // app.use(express.static("public"));
 app.use(express.static(__dirname + "/public"));
 
