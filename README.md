@@ -12,6 +12,10 @@
     node-express-ejs
         .git
         node_modules
+        public                  // 静态资源文件夹
+            style
+            img
+            js
         routes                  // 路由文件夹
             route.js            // 设置路由的js模块文件
         views                   // 视图
