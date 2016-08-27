@@ -1,6 +1,9 @@
 var express = require("express");
+// var path = require("path");
+
 // 引进路由模块
 var route = require("./routes/route");
+var lessMiddleWare = require("less-middleware");
 
 var app = express();
 
@@ -10,6 +13,13 @@ app.set("view engine", "ejs");
 
 // 使用路由
 app.use(route);
+
+app.use(lessMiddleWare({
+    src: __dirname + "/public",
+    compress: true
+}));
+// app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 app.listen(3000, function () {
     console.log("开始监听...");
